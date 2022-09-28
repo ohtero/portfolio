@@ -14,11 +14,12 @@ body {
     background-color: #567DA0;
     margin: 0%;
     display: flex;
+    flex-direction: column;
 }
 
 a {
     text-decoration: none;
-    color: #0C3558;
+    color: rgb(12, 53, 88);
     transition: font-size 400ms;
 }
 
@@ -31,8 +32,6 @@ a:hover {
 
 .flex {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 
@@ -49,9 +48,9 @@ a:hover {
 .header-wrapper {
     border-bottom: solid 3px rgb(12, 53, 88);
     justify-content: center;
-    width: 100vw;
-    /* min-width: fit-content; */
+    width: 100%;
     max-height: 59px;
+    background-color: white;
 }
 
 .top-navigation {
@@ -59,9 +58,8 @@ a:hover {
     justify-content: space-between;
     padding: 1rem;
     margin: 0;
-    width: 70vw;
+    width: 70%;
     min-width: fit-content;
-
 }
 
 .logo,
@@ -80,4 +78,38 @@ a:hover {
 
 .nav-list-items > li {
     flex-shrink: 0;    
+}
+
+/* hero */
+
+.hero-wrapper {
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+
+}
+
+.hero-container {
+    width: 90%;
+    position: relative;
+    height: fit-content;
+}
+
+.hero-background {
+    width: 100%;
+    height: auto;  
+}
+
+.gradient-left {
+    position: absolute;
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0));
+    width: 20%;
+    height: 100%;
+}
+.gradient-right {
+    position: absolute;
+    left: 80%;
+    background-image: linear-gradient(to left, rgb(255, 255, 255), rgba(255, 255, 255, 0));
+    width: 20%;
+    height: 100%;
 }
