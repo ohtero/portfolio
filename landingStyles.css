@@ -1,0 +1,83 @@
+
+/* general styling */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    background-color: #567DA0;
+    margin: 0%;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: #0C3558;
+    transition: font-size 400ms;
+}
+
+a:hover {
+
+    font-size: 105%;
+    transition-delay: 20ms;
+    transition-timing-function: ease-out;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+/* header and navbar content */
+
+.header-wrapper,
+.top-navigation,
+.nav-list-items {
+    display: flex;
+    flex-direction: row;
+}
+
+.header-wrapper {
+    border-bottom: solid 3px rgb(12, 53, 88);
+    justify-content: center;
+    width: 100vw;
+    /* min-width: fit-content; */
+    max-height: 59px;
+}
+
+.top-navigation {
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: 0;
+    width: 70vw;
+    min-width: fit-content;
+
+}
+
+.logo,
+.nav-list-items {
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    font-weight: bold;
+}
+
+.nav-list-items {
+    gap: 2rem;
+    justify-content: end;
+    list-style: none;
+    margin: 0%;
+    padding: 0 0 0 4rem;
+}
+
+.nav-list-items > li {
+    flex-shrink: 0;    
+}
